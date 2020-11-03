@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/essential"
+  ],
+  "plugins": [
+    "align-import",
+    "align-assignments"
+  ],
+  "rules": {
+    "max-len":[2,150],
+    "align-import/align-import": 1,
+    "align-import/trim-import": 1,
+    "no-multi-spaces": 0,
+    "no-console": [1,{"allow": ["warn","error"]}],
+    "prefer-destructuring":0,
+    "align-assignments/align-assignments": [1,{"requiresOnly": false}],
+    "import/extensions":0,
+    "import/no-unresolved":0,
+    "no-param-reassign":0,
+    "consistent-return":0,
+    "eqeqeq":1,
+    "no-use-before-define":[2, { "functions": false, "classes": false }],
+    "global-require":1,
+    "no-unused-expressions":1,
+    "no-underscore-dangle":1,
+    "no-restricted-syntax":0,
+    "guard-for-in":1,
+    "radix":0,
+    "import/no-cycle":0
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

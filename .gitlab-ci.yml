@@ -1,0 +1,9 @@
+stages:
+  - deploy
+  # 注意! 每个stage开始时会同步仓库,所有打包和安装的文件会被清空,因此方便起见把安装和部署合并到一个stage
+deploy:
+  stage: deploy
+  script:
+    - npm i --registry=https://registry.npm.taobao.org #安装
+    - npm run $BUILD_MOD #打包
+    - scp -r dist root@$PUBLIC_IP:$PUBLIC_PATH #传输

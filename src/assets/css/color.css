@@ -1,0 +1,21 @@
+:root{
+    --blue:#1c84c6;
+    --light-blue:#23c6c8;
+    --yellow:#f8ac59;
+    --red:#ed5565;
+}
+.status{
+    color: #fff;
+    border-radius: 4px;
+    line-height: 1;
+    padding: 0 5px;
+  }
+  .status.red{
+    background-color: var(--red);
+  }
+  .status.blue{
+    background-color: var(--blue);
+  }
+  .status.yellow{
+    background-color: var(--yellow);
+  }

@@ -1,0 +1,150 @@
+@import './color.css';
+*{
+  box-sizing: border-box;
+}
+html,body{
+  padding: 0;
+  margin: 0;
+}
+i.i{
+  color: #999;
+}
+i.i::before{
+  content: '* ';
+}
+a,a:visited,a:link{
+  text-decoration: none;
+  color: inherit;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.bg-shadow{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+.f1{
+  display: flex;
+  flex: 1;
+}
+  /* *::-webkit-scrollbar {
+      display: none;}
+    div::-webkit-scrollbar {
+      display: none;}
+    body::-webkit-scrollbar {
+      display: none;}
+    html::-webkit-scrollbar {
+      display: none;} */
+  .block {
+    background-color: #f8f8f8;
+  }
+  .start {
+    justify-content: flex-start;
+  }
+  .es {
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .align {
+    align-items: center;
+    display: flex;
+  }
+  .shadow {
+    background: #fff;
+    box-shadow: 0 3px 14px 3px rgba(40, 120, 255, 0.08), 0 8px 10px 1px rgba(0, 0, 0, 0.05);
+  }
+  .flex {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .around,
+  .between,
+  .column,
+  .end,
+  .row-center,
+  .wrap,
+  .strech,
+  .align,
+  .wrap,
+  .vertical-center,
+  .start,
+  .center {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .strech {
+    align-items: stretch;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .row-center {
+    justify-content: center;
+  }
+  .around {
+    justify-content: space-around;
+  }
+  .between {
+    justify-content: space-between;
+  }
+  .end {
+    justify-content: flex-end;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .hf {
+    height: 100%;
+  }
+  .hh {
+    height: 50%;
+  }
+  .wf {
+    width: 100%;
+  }
+  .wh {
+    width: 50%;
+  }
+  .pab {
+    position: absolute;
+  }
+  .pre {
+    position: relative;
+  }
+  .fix {
+    position: fixed;
+  }
+  .radius {
+    border-radius: 50%;
+  }
+
+ .el-menu{
+    border: none !important;
+  }
+      *{
+          -ms-scroll-chaining: chained;
+          -ms-overflow-style: none;
+          -ms-content-zooming: zoom;
+          -ms-scroll-rails: none;
+          -ms-content-zoom-limit-min: 100%;
+          -ms-content-zoom-limit-max: 500%;
+          -ms-scroll-snap-type: proximity;
+          -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+          -ms-overflow-style: none;
+      }
