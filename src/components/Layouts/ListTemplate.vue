@@ -232,6 +232,14 @@ function initFilterFormItems() {
       value: Object.keys(userStatus).map((i) => i - 0),
       options: { ...userStatus },
     },
+    {
+      keyMin: 'timeStart',
+      keyMax: 'timeEnd',
+      type: 'el-date-picker',
+      pickerType: 'daterange',
+      label: '创建时间',
+      value: [],
+    },
   ];
   return items;
 }
