@@ -101,8 +101,8 @@ feedback参数指示此次请求成功后是否向用户反馈服务器返回的
 
 请求在遇到50x状态码时会重试(可以在utils/interceptors.js里修改),重试的次数和间隔时间可以通过retry和retryInterval控制
 
-4. 配置式表单
-   demo中的所有表单(筛选条件,新增数据,修改数据)都是通过配置渲染的,使用方式如下:
+4. 声明式表单
+   demo中的所有表单都是通过schema渲染的,使用方式如下:
 
 ```html
     <ulab-form size='small' layout='vertical' 
